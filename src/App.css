@@ -1,0 +1,265 @@
+/* Corporate FEMG Command Center Styles */
+
+.App {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+}
+
+/* Custom scrollbar for the entire app */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+/* Smooth transitions for all interactive elements */
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Custom focus styles for accessibility */
+*:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Button hover effects */
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Card hover effects */
+.hover\:shadow-lg:hover {
+  transform: translateY(-2px);
+}
+
+/* Loading animation */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Status indicators */
+.status-online {
+  background: linear-gradient(135deg, #10b981, #059669);
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+}
+
+.status-warning {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.3);
+}
+
+.status-error {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  box-shadow: 0 0 20px rgba(239, 68, 68, 0.3);
+}
+
+/* Corporate gradient backgrounds */
+.gradient-blue {
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+}
+
+.gradient-green {
+  background: linear-gradient(135deg, #10b981, #059669);
+}
+
+.gradient-purple {
+  background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+}
+
+.gradient-orange {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+}
+
+/* Chart styling */
+.recharts-tooltip-wrapper {
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Executive dashboard specific styles */
+.executive-card {
+  background: linear-gradient(145deg, #ffffff, #f8fafc);
+  border: 1px solid rgba(203, 213, 225, 0.5);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.executive-card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Mission control styling */
+.mission-control-bg {
+  background: radial-gradient(ellipse at center, #1e293b 0%, #0f172a 100%);
+}
+
+/* Typography enhancements */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+}
+
+/* Corporate branding */
+.femg-brand {
+  background: linear-gradient(135deg, #dc2626, #991b1b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 800;
+}
+
+/* Status badges */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.status-badge-success {
+  background-color: rgba(16, 185, 129, 0.1);
+  color: #059669;
+  border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.status-badge-warning {
+  background-color: rgba(245, 158, 11, 0.1);
+  color: #d97706;
+  border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+.status-badge-error {
+  background-color: rgba(239, 68, 68, 0.1);
+  color: #dc2626;
+  border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+/* Responsive design helpers */
+@media (max-width: 768px) {
+  .App {
+    font-size: 14px;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  h2 {
+    font-size: 1.25rem;
+  }
+  
+  .grid-responsive {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Print styles for reports */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  body {
+    background: white;
+  }
+  
+  .executive-card {
+    break-inside: avoid;
+    box-shadow: none;
+    border: 1px solid #e5e7eb;
+  }
+}
+
+/* Dark mode support (future enhancement) */
+@media (prefers-color-scheme: dark) {
+  .dark-mode {
+    background: #0f172a;
+    color: #f8fafc;
+  }
+}
+
+/* Animation for data loading */
+@keyframes slideInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-up {
+  animation: slideInUp 0.3s ease-out;
+}
+
+/* Enhanced button styles */
+.btn-corporate {
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  border: none;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.3);
+}
+
+.btn-corporate:hover {
+  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+  box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.4);
+}
+
+.btn-corporate:active {
+  transform: translateY(1px);
+}
+
+/* Performance monitoring indicators */
+.performance-excellent {
+  color: #059669;
+  background-color: rgba(16, 185, 129, 0.1);
+}
+
+.performance-good {
+  color: #0891b2;
+  background-color: rgba(6, 182, 212, 0.1);
+}
+
+.performance-warning {
+  color: #d97706;
+  background-color: rgba(245, 158, 11, 0.1);
+}
+
+.performance-critical {
+  color: #dc2626;
+  background-color: rgba(239, 68, 68, 0.1);
+}
