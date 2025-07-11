@@ -1,71 +1,79 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <!-- Primary Meta Tags -->
-    <title>FEMG Command Center - Flat Earth Media Group Corporate Dashboard</title>
-    <meta name="title" content="FEMG Command Center - Flat Earth Media Group Corporate Dashboard" />
-    <meta name="description" content="The ultimate corporate command center for Flat Earth Media Group - monitoring 13 platforms, business intelligence, and network operations in real-time." />
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://femgp.com/" />
-    <meta property="og:title" content="FEMG Command Center - Corporate Dashboard" />
-    <meta property="og:description" content="Mission control for the entire Flat Earth Media ecosystem. Real-time monitoring, analytics, and administration." />
-    <meta property="og:image" content="/FEMG-logo.jpg" />
-    
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://femgp.com/" />
-    <meta property="twitter:title" content="FEMG Command Center - Corporate Dashboard" />
-    <meta property="twitter:description" content="Mission control for the entire Flat Earth Media ecosystem. Real-time monitoring, analytics, and administration." />
-    <meta property="twitter:image" content="/FEMG-logo.jpg" />
-    
-    <!-- Additional SEO -->
-    <meta name="keywords" content="flat earth media group, femg, command center, corporate dashboard, business intelligence, network monitoring, admin management, flat earth network" />
-    <meta name="author" content="Flat Earth Media Group" />
-    <meta name="robots" content="index, follow" />
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://femgp.com/" />
-    
-    <!-- Preconnect for performance -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <!-- Additional favicon sizes -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico">
-    
-    <!-- Theme color for mobile browsers -->
-    <meta name="theme-color" content="#3B82F6" />
-    <meta name="msapplication-TileColor" content="#3B82F6" />
-    
-    <!-- Structured data for SEO -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Flat Earth Media Group",
-      "alternateName": "FEMG",
-      "url": "https://femgp.com",
-      "logo": "https://femgp.com/FEMG-logo.jpg",
-      "description": "Corporate command center for the Flat Earth Media Group ecosystem",
-      "sameAs": [
-        "https://flatearthastan.com",
-        "https://fechannel.com",
-        "https://ferlive.com"
-      ]
-    }
-    </script>
-    <script type="module" crossorigin src="/assets/index--qsWfxAI.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-BJ1PlhDp.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FEMGP Command Center</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 4rem 3rem;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+            max-width: 600px;
+        }
+        h1 { font-size: 3rem; margin-bottom: 1rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
+        .subtitle { font-size: 1.3rem; margin-bottom: 2rem; opacity: 0.9; }
+        .status { 
+            background: rgba(76, 175, 80, 0.3);
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            display: inline-block;
+            margin: 1rem 0;
+            border: 1px solid rgba(76, 175, 80, 0.5);
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        .feature {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem 1rem;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .feature h3 { margin-bottom: 0.5rem; color: #ffeb3b; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>FEMGP Command Center</h1>
+        <p class="subtitle">Flat Earth Media Group Productions</p>
+        <div class="status">🚀 System Online</div>
+        
+        <div class="features">
+            <div class="feature">
+                <h3>📺 Content Management</h3>
+                <p>Manage video content across platforms</p>
+            </div>
+            <div class="feature">
+                <h3>📊 Analytics Hub</h3>
+                <p>Track performance and engagement</p>
+            </div>
+            <div class="feature">
+                <h3>🎛️ Publishing Tools</h3>
+                <p>Multi-platform content distribution</p>
+            </div>
+            <div class="feature">
+                <h3>⚙️ System Control</h3>
+                <p>Administrative management interface</p>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
